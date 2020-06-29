@@ -3,11 +3,11 @@
 // Semester 2, 2019/2020
 // Exercise 4: Back end services - Flutter App
 //
-// Name 1:  ......
-// Name 2:  ......
+// Name 1:  Nursyahira Sabrina Binti Mohd Sukri
+// Name 2:  Nurmazli Azrin Binti Mohd Razali
 //-----------------------------------------------------------
 
-// TODO: Modify this file accordingly
+// Todo: Modify this file accordingly
 
 import 'package:flutter/material.dart';
 
@@ -58,7 +58,7 @@ class _QuoteListScreenState extends State<QuoteListScreen> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.refresh),
 
-        // TODO: Define the 'onPressed' callback for the 'Refresh' button
+        // Todo: Define the 'onPressed' callback for the 'Refresh' button
         onPressed: () {},
       ),
     );
@@ -67,7 +67,7 @@ class _QuoteListScreenState extends State<QuoteListScreen> {
   Widget _buildStarRatings([int stars = 0]) {
     // stars : how many (full) stars to draw. The remaining star (i.e., 5 - stars) will be drawn as 'bordered star'
 
-    // TODO: You can use two loops in this function
+    // Todo: You can use two loops in this function
     //          1. To build the list of 'full stars'
     //          2. To build the list of 'bordered or empty stars'
     //
@@ -105,7 +105,7 @@ class _QuoteListScreenState extends State<QuoteListScreen> {
   }
 
   Widget _buildThumbButtons(int index) {
-    Quote quote = _quotes[index];
+    //Quote quote = _quotes[index];
 
     return Row(
       mainAxisSize: MainAxisSize.min,
@@ -116,7 +116,7 @@ class _QuoteListScreenState extends State<QuoteListScreen> {
             Icons.thumb_up,
             color: Colors.green,
           ),
-          // TODO: Define the 'onPressed' callback for each 'Thumb up' button
+          // Todo: Define the 'onPressed' callback for each 'Thumb up' button
           onPressed: () async {},
         ),
         IconButton(
@@ -124,7 +124,7 @@ class _QuoteListScreenState extends State<QuoteListScreen> {
             Icons.thumb_down,
             color: Colors.red,
           ),
-          // TODO: Define the 'onPressed' callback for each 'Thumb down' button
+          // Todo: Define the 'onPressed' callback for each 'Thumb down' button
           onPressed: () async {},
         ),
         Text('5', style: TextStyle(color: Colors.red)),

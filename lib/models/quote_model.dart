@@ -1,4 +1,4 @@
-// TODO: Modify the model class in accoradance with your database.
+// Todo: Modify the model class in accoradance with your database.
 // Notes: You may want to add the class with some helper methods for example
 //         to calculate the vote count, percentage, star ratings, etc.
 
