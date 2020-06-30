@@ -29,7 +29,7 @@
 ############################################################################################
 
 # Write your API url. e.g. https://us-central1-jumail-backend-firebase-rest.cloudfunctions.net/api
-@baseUrl = _______________________________________________
+@baseUrl = https://us-central1-exercise4-a05e5.cloudfunctions.net/api;
 
 ### Example of endpoints for basic CRUD operations.
 #    Later in your submission, leave only the one that you actually use and remove others from this file.
@@ -39,7 +39,8 @@
 GET {{baseUrl}}/quotes
 
 ###  Getting a quote for a given id
-GET {{baseUrl}}/quotes/7hafVnkozwXR6u2world
+GET {{baseUrl}}/quotes/3ZkWy2ncYmIT0chAh8yY
+
 
 ###  Add a new quote
 POST {{baseUrl}}/quotes
@@ -52,7 +53,7 @@ Content-Type: application/json
 }
 
 ### Update a quote partly
-PATCH {{baseUrl}}/quotes/7hafVnkozwXR6u2world
+PATCH {{baseUrl}}/quotes/8UUfmtZ9PFRsn42BN2c7
 Content-Type: application/json
 
 {
@@ -60,7 +61,7 @@ Content-Type: application/json
 }
 
 ###
-PATCH {{baseUrl}}/quotes/7hafVnkozwXR6u2world
+PATCH {{baseUrl}}/quotes/8UUfmtZ9PFRsn42BN2c7
 Content-Type: application/json
 
 {
@@ -68,7 +69,7 @@ Content-Type: application/json
 }
 
 ### Replace an existing quote entirely
-PUT {{baseUrl}}/quotes/7hafVnkozwXR6u2world
+PUT {{baseUrl}}/quotes/8UUfmtZ9PFRsn42BN2c7
 Content-Type: application/json
 
 {

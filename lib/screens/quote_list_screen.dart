@@ -51,7 +51,7 @@ class _QuoteListScreenState extends State<QuoteListScreen> {
             trailing: _buildThumbButtons(index),
             title: Text('The quote will go here',
                 textAlign: TextAlign.justify, style: TextStyle(fontSize: 12)),
-            subtitle: _buildStarRatings(),
+            subtitle: _buildStarRatings(_quotes[index].starRating()),
           );
         },
       ),
@@ -69,7 +69,7 @@ class _QuoteListScreenState extends State<QuoteListScreen> {
     );
   }
 
-  Widget _buildStarRatings([int stars = 3]) {
+  Widget _buildStarRatings(int stars) {
     final list = <Widget>[];
     for (int i = 0; i < stars; i++) {
       list.add(
