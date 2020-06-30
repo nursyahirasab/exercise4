@@ -55,11 +55,6 @@ class QuoteDataService {
     final json = await rest.patch('quotes/$id');
     return Quote.fromJson(json);
   }
-  // async create(collection, document) {
-  //   const result = await this.firestore.collection(collection).add(document);
-  //   document.id = result.id;
-  //   return document;
-  // }
 
   //        Vote a quote for like or dislike
   Future<Quote> voteQuote({String id, double percentage}) async {

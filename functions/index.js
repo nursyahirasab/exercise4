@@ -1,10 +1,10 @@
 const functions = require("firebase-functions");
 const express = require("express");
 const app = express();
-//const todosRouter = require("./api/controllers/todos_controller");
+
 
 app.use(express.json());
-//app.use("/todos", todosRouter);
+app.use("/quotes", quoteRouter);
 
 exports.api = functions.https.onRequest(app);
 

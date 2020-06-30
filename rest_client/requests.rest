@@ -82,10 +82,10 @@ Content-Type: application/json
 DELETE {{baseUrl}}/quotes/7hafVnkozwXR6u2world
 
 ### Thumb up (or Like) - Update the 'like' attribute by inreasing by 1
-PATCH {{baseUrl}}/quotes/9helloKozwXR6u2world/like
+PATCH {{baseUrl}}/quotes/V4eroiE0lj08yA2b6pvc/like
 
 ###
-PATCH {{baseUrl}}/like/9helloKozwXR6u2world
+PATCH {{baseUrl}}/like/8UUfmtZ9PFRsn42BN2c7
 
 ###
-PATCH {{baseUrl}}/quotes/9helloKozwXR6u2world?vote=like
+PATCH {{baseUrl}}/quotes/8UUfmtZ9PFRsn42BN2c7?vote=like

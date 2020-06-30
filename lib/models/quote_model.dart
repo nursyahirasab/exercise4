@@ -22,6 +22,7 @@ class Quote {
   int get vote => like + dislike;
 
   double get percentage => (like / vote) * 100;
+
   int starRating() {
     if (percentage < 25 && percentage > 0) {
       return 1;
