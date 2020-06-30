@@ -57,14 +57,6 @@ class _QuoteListScreenState extends State<QuoteListScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.refresh),
-
-        // Todo: Define the 'onPressed' callback for the 'Refresh' button
-        // Todo updatedTodo = await dataService.updateTodoStatus(
-        //       id: _todos[index].id,
-        //       status: !_todos[index]
-        //           .completed); // Get the current status from UI and toggle it
-        //   setState(() => _todos[index].completed = updatedTodo
-        //       .completed);
         onPressed: () async {
           for (int i = 0; i < _quotes.length; i++) {
             Quote refreshQuote = await dataService.voteQuote(
@@ -78,12 +70,6 @@ class _QuoteListScreenState extends State<QuoteListScreen> {
   }
 
   Widget _buildStarRatings([int stars = 3]) {
-    // stars : how many (full) stars to draw. The remaining star (i.e., 5 - stars) will be drawn as 'bordered star'
-
-    // Todo: You can use two loops in this function
-    //          1. To build the list of 'full stars'
-    //          2. To build the list of 'bordered or empty stars'
-    //
     final list = <Widget>[];
     for (int i = 0; i < stars; i++) {
       list.add(
