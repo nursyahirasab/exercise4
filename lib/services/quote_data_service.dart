@@ -45,8 +45,31 @@ class QuoteDataService {
 
   // Todo: You may need to provide the REST calls for the followings:
   //        Get a quote for a given id
-  //        Update a quote for a given id
-  //        Vote a quote for like or dislike
-  //        Like or dislike a quote
+  Future<Quote> getQuote({String id}) async {
+    final json = await rest.get('quotes/$id');
+    return Quote.fromJson(json);
+  }
 
+  //        Update a quote for a given id
+  Future<Quote> updateQuote({String id}) async {
+    final json = await rest.patch('quotes/$id');
+    return Quote.fromJson(json);
+  }
+
+  //        Vote a quote for like or dislike
+  Future<Quote> voteQuote({String id, double percentage}) async {
+    final json = await rest.patch('quotes/$id', data: {'vote': percentage});
+    return Quote.fromJson(json);
+  }
+
+  //        Like or dislike a quote
+  Future<Quote> likeQuote({String id, int like}) async {
+    final json = await rest.patch('quotes/$id', data: {'like': like});
+    return Quote.fromJson(json);
+  }
+
+  Future<Quote> dislikeQuote({String id, int dislike}) async {
+    final json = await rest.patch('quotes/$id', data: {'dislike': dislike});
+    return Quote.fromJson(json);
+  }
 } // class Quote

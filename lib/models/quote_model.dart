@@ -18,4 +18,21 @@ class Quote {
 
   Map<String, dynamic> toJson() =>
       {'id': id, 'data': data, 'like': like, 'dislike': dislike};
+
+  int get vote => like + dislike;
+
+  double get percentage => (like / vote) * 100;
+  int starRating() {
+    if (percentage < 25 && percentage > 0) {
+      return 1;
+    } else if (percentage < 45) {
+      return 2;
+    } else if (percentage < 65) {
+      return 3;
+    } else if (percentage < 85) {
+      return 4;
+    } else {
+      return 5;
+    }
+  }
 }
