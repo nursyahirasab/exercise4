@@ -1,14 +1,21 @@
-const functions = require("firebase-functions");
-const express = require("express");
-const app = express();
-//const todosRouter = require("./api/controllers/todos_controller");
+// const admin = require("firebase-admin");
+// admin.initializeApp({
+//   credential: admin.credential.applicationDefault(),
+// });
 
-app.use(express.json());
-//app.use("/todos", todosRouter);
+// this.firestore = admin.firestore();
 
-exports.api = functions.https.onRequest(app);
+// const functions = require("firebase-functions");
+// const express = require("express");
+// const app = express();
+// //const todosRouter = require("./api/controllers/todos_controller");
 
-// To handle "Function Timeout" exception
-exports.functionsTimeOut = functions.runWith({
-  timeoutSeconds: 300,
-});
+// app.use(express.json());
+// //app.use("/todos", todosRouter);
+
+// exports.api = functions.https.onRequest(app);
+
+// // To handle "Function Timeout" exception
+// exports.functionsTimeOut = functions.runWith({
+//   timeoutSeconds: 300,
+// });

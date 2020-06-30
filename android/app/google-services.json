@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "880107080281",
+    "firebase_url": "https://exercise4-a05e5.firebaseio.com",
+    "project_id": "exercise4-a05e5",
+    "storage_bucket": "exercise4-a05e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880107080281:android:ba736aa3dea4f33fcf3f48",
+        "android_client_info": {
+          "package_name": "com.map.exercise4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880107080281-2vqbbt08rsb4jgldahs1paomp70j6e4j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6aL4lskrxHk_brNnDQHcz1wGHyTrLg-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880107080281-2vqbbt08rsb4jgldahs1paomp70j6e4j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

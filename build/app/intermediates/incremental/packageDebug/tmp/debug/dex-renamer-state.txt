@@ -1,4 +1,7 @@
-#Tue Jun 30 12:02:47 SGT 2020
-base.0=C\:\\Users\\USER\\Downloads\\Mobile App Project\\exercise4\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Tue Jun 30 13:45:25 SGT 2020
+base.0=C\:\\Users\\USER\\Downloads\\Mobile App Project\\exercise4\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=C\:\\Users\\USER\\Downloads\\Mobile App Project\\exercise4\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
